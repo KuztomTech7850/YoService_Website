@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . "/yoservice/ftools/global/api/API.class.php");
+require_once(__DIR__ . "/ftools/global/api/API.class.php");
 
 $api = new FormTools\API();
 $fields = $api->initFormPage("", "yoservice_contact");
