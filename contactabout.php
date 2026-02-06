@@ -1,4 +1,22 @@
+<?php
+require_once(__DIR__ . "/yoservice/ftools/global/api/API.class.php");
+
+$api = new FormTools\API();
+$fields = $api->initFormPage("", "yoservice_contact");
+
+$params = array(
+    "submit_button" => "submit_contact",
+    "next_page"     => "thankyou.html",
+    "form_data"     => $_POST,
+    // "file_data"  => $_FILES, // not needed, no file uploads
+    "finalize"      => true
+);
+
+$api->processFormSubmission($params);
+?>
+
 <!DOCTYPE HTML>
+
 <html>
 	<head>
 		<title>YoService - About Us</title>
@@ -41,78 +59,77 @@
 					</nav>
 
 				<!-- Main -->
-					<div id="main" class="alt">
-
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h1>About Us</h1>
-									</header>
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-								</div>
-							</section>
-
-					</div>
-
 				<!-- Contact -->
 					<section id="contact">
-						<div class="inner">
+					<div class="inner">
+						<section class="split">
+							<!-- Left: YoService snippet -->
 							<section>
-								<form method="post" action="#">
+								<header class="major">
+									<h2>Get in Touch with YoService</h2>
+								</header>
+								<p>
+									YoService provides local, practical solutions for your home and business technology needs.
+									Tell us what you're working on, and we'll follow up to explore the best options for your situation.
+								</p>
+							</section>
+
+							<!-- Right: Form -->
+							<section>
+								<form method="POST" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" required />
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="email" name="email" id="email" required />
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
+											<textarea name="message" id="message" rows="6" required></textarea>
 										</div>
+
+										<!-- Tag the page for your own tracking -->
+										<input type="hidden" name="source_page" value="Contact / About" />
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li>
+											<input type="submit" value="Send Message" class="primary" name="submit_contact" />
+										</li>
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
 							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
+						</section>
 
-				<!-- Footer -->
-					<footer id="footer">
+						<!-- Bottom: contact details -->
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href="mailto:contact@yoservice.work">contact@yoservice.work</a>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>(000) 000-0000</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Service Area</h3>
+									<span>Mancos • Cortez • Dolores and nearby communities</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
 						<div class="inner">
 							<ul class="icons">
 								<li><a href="https://bsky.app/profile/harterhillnetwork.com" target="_blank" class="icon brands alt fa-rebel"><span class="label">Bluesky</span></a></li>
