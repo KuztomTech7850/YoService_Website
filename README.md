@@ -1,32 +1,36 @@
-Forty by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# YoService Website
 
+A website repository to document changes and provide a back-up for the YoService project.
 
-This is Forty, my latest and greatest addition to HTML5 UP and, per its incredibly
-creative name, my 40th (woohoo)! It's built around a grid of "image tiles" that are
-set up to smoothly transition to secondary landing pages (for which a separate page
-template is provided), and includes a number of neat effects (check out the menu!),
-extra features, and all the usual stuff you'd expect. Hope you dig it!
+## Project Overview
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+YoService is a website for a business seeking to offer platform-as-a-service. Clients can hire independant contractors via the platform. The niche will be in the services offered to protect clients and contractors, alike. Furthermore, the business ethics will be based on mutual growth over corporate profits.
 
-(* = not included)
+## Tech Stack
 
-AJ
-aj@lkn.io | @ajlkn
+- **HTML** (35%)
+- **CSS** (30.2%)
+- **SCSS** (27.2%)
+- **JavaScript** (7.6%)
 
+## Features
 
-Credits:
+- Commercial Details
+- Contact From
+- TBD
 
-	Demo Images:
-		Unsplash (unsplash.com)
+## Project Structure
 
-	Icons:
-		Font Awesome (fontawesome.io)
+- Local build > GitHub > Host Server
+- Future vision: App-Based Site
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+## Credits
+
+- Demo Images:
+	Unsplash (unsplash.com)
+- Icons:
+	Font Awesome (fontawesome.io)
+- Other:
+	jQuery (jquery.com)
+	Scrollex (github.com/ajlkn/jquery.scrollex)
+	Responsive Tools (github.com/ajlkn/responsive-tools)
