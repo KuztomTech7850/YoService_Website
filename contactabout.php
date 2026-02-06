@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>YoService - Business Technology</title>
+		<title>YoService - About Us</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -35,13 +30,13 @@
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="mountassemble.html">Mounting & Assembly</a></li>
-							<li><a href="2hometech1.html">Home Technology</a></li>
-							<li><a href="3biztech1.html">Business Technology</a></li>
-							<li><a href="4solutions1.html">Bespoke Solutions</a></li>
+							<li><a href="hometechnology.html">Home Technology</a></li>
+							<li><a href="businesstech.html">Business Technology</a></li>
+							<li><a href="bespokesolutions.html">Bespoke Solutions</a></li>
 						</ul>
 						<ul class="actions stacked">
 							<li><a href="#contact" class="button primary fit">Get Started</a></li>
-							<li><a href="5aboutus1.html" class="button fit">About Us</a></li>
+							<li><a href="contactabout.php" class="button fit">About Us</a></li>
 						</ul>
 					</nav>
 
@@ -52,21 +47,12 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>Business Technology – $55/hr</h1>
+										<h1>About Us</h1>
 									</header>
-									<span class="image main"><img src="images/pic08.jpg" alt="" /></span>
-									<p><strong>What’s Possible:</strong><br>
-  										Whether you’re opening your first retail shop or upgrading your back office, we handle the setup that keeps your business moving. POS systems, secure networks, smart inventory, and on-site troubleshooting — all delivered with precision and care.</p>
-  									<ul>
-    									<li>Retail and café tech setup (POS, inventory scanners, receipt printers)</li>
-    									<li>Network infrastructure and secure access</li>
-    									<li>Office equipment installs</li>
-    									<li>Low-code tools or basic databases for inventory or scheduling</li>
-  									</ul>
-
-  									<p><strong>Perfect For:</strong><br>
-  										Shop owners, coworking spaces, startups — or anyone needing reliable tech. Want us to mount stools in your café? That’s a $30/hr task billed accordingly. Tech, setup, or physical — we scope it fairly every time.</p>
-
+									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
 								</div>
 							</section>
 
