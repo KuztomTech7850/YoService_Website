@@ -1,0 +1,13 @@
+Contact: mailto:serviceadmin@yoservice.work
+
+Expires: 2027-01-01T00:00:00Z
+
+Policy: https://yoservice.work/contactabout.php
+# Page where you describe how to report issues or your general security/abuse policy.
+
+Preferred-Languages: en
+Encryption: https://keys.openpgp.org/vks/v1/by-email/contact@yoservice.work
+# Optional: remove this line if you don't use PGP.
+
+Acknowledgments: https://yoservice.work/
+# Optional: where you'd thank reporters, or just point to your home page.

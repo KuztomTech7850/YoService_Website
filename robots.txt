@@ -1,0 +1,47 @@
+# Allow normal search engines by default
+User-agent: *
+Disallow: /ftools/
+Disallow: /.well-known/
+Disallow: /phpinfo.php
+
+# Block common AI / scraping bots (best effort)
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: FacebookBot
+Disallow: /
+User-agent: Twitterbot
+Disallow: /
+User-agent: LinkedInBot
+Disallow: /
+User-agent: Amazonbot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DataForSeoBot
+Disallow: /
+User-agent: omgili
+Disallow: /
+User-agent: ImagesiftBot
+Disallow: /
+User-agent: AwarioRssBot
+Disallow: /
+
+# If/when Grok/xAI publishes a user-agent string - add:
+# User-agent: Grok
+# Disallow: /
